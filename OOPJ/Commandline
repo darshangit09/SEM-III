@@ -1,0 +1,11 @@
+public class commandline
+{
+public static void main (String args[])
+{
+   System.out.println("The Name of Student is "+args[0]);
+   System.out.println("The Enroll of Student is "+args[1]);
+   System.out.println("The City of Student is "+args[2]);
+
+
+}
+}
