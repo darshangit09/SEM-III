@@ -1,34 +1,19 @@
 #include <iostream>
-#include <string>
-using namespace std; 
-  class MyClass {      
-  public:             
-    int eNum;        
-    string name;
-    string city;	  
-};
-
-int main() 
-{
-  MyClass details;  
-  details.eNum = 490; 
-  details.name = "Darshan";
-  details.city = "Surat";
- 
-  
-  cout << details.eNum << "\n";
-  cout << details.name << "\n";
-  cout << details.city <<"\n";
-
-  MyClass details1;  
-  details1.eNum = 491; 
-  details1.name = "Darsh";
-  details1.city = "Surat";
- 
-  
-  cout << details1.eNum << "\n";
-  cout << details1.name << "\n";
-  cout << details1.city <<"\n";
-
-  return 0;
+#include <conio.h>
+using namespace std;
+    int main()
+{   
+    int num[10];
+    string name[10], city[10];
+    cout<<"Enter enrollement_no, Name and City for 5 students:";
+    for(int i=1;i<=5;i++)
+    {    
+            cout<<endl;
+            cout<<"Enter detail of Student"<<i<<":";
+            cin>>num[i];
+            cin>>name[i];
+            cin>>city[i];
+        
+    }
+    return 0;
 }
