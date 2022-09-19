@@ -9,11 +9,13 @@ class Bank
     Scanner s = new Scanner(System.in);
     void get()
     {
+      
         System.out.println("Enter Name");
         System.out.println("Enter Account No");
         System.out.println("Enter Balance");
         for(int i=0;i<5;i++)
         {
+        System.out.println("Enter details of employee:"+i);
         name[i]=s.nextLine();
         acc_num[i]=s.nextInt();
         bal[i]=s.nextDouble();
@@ -53,7 +55,7 @@ class bank
 {
     public static void main(String args[])
     {
-        Bank b = new Bank1();
+        Bank b = new Bank();
         b.get();
         b.display();   
         b.search();
