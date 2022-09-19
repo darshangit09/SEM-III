@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class bank1
+class Bank
 {
     
     int[] acc_num= new int[5];
@@ -10,44 +10,25 @@ class bank1
     void get()
     {
         System.out.println("Enter Name");
-        for(int i=0;i<5;i++)
-        {
-        name[i]=s.nextLine();
-                
-        }
-
         System.out.println("Enter Account No");
-        for(int i=0;i<5;i++)
-        {
-        acc_num[i]=s.nextInt();
-                
-        }
-  
         System.out.println("Enter Balance");
         for(int i=0;i<5;i++)
         {
+        name[i]=s.nextLine();
+        acc_num[i]=s.nextInt();
         bal[i]=s.nextDouble();
-                
         }
     }
    
     void display()
-    {    for(int i=0;i<5;i++)
+    {    
+        for(int i=0;i<5;i++)
         {
         System.out.println("Name of the Account Holdder is: "+name[i]);
-        }       
-        
-         
-        for(int i=0;i<5;i++)
-        {        
         System.out.println("The Account Number is: "+acc_num[i]);
-        }
-        
-         for(int i=0;i<5;i++)
-        {        
         System.out.println("Balance of the Account is: "+bal[i]);
         }
-    }
+     }   
         void search()
         {
                             
@@ -72,7 +53,7 @@ class bank
 {
     public static void main(String args[])
     {
-        bank1 b = new bank1();
+        Bank b = new Bank1();
         b.get();
         b.display();   
         b.search();
